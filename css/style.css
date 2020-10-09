@@ -30,7 +30,7 @@ body {
 }
 
 .input-address {
-  width: 690px;
+  flex: 0.8;
   background-image: url(../img/home.svg);
   background-repeat: no-repeat;
   background-position: left 11px center;
@@ -76,7 +76,7 @@ body {
 
 .promo {
   box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
-  background: #FFF1B8 url(../img/promo-img.jpeg) no-repeat top 50px right -100px / 800px;
+  background: #FFF1B8 url(../img/promo-img.jpeg) no-repeat top -120px right -250px / 900px;
   border-radius: 10px;
   padding: 68px 70px;
   margin-bottom: 56px;
@@ -94,7 +94,9 @@ body {
   line-height: 28px;
   color: #302C34;
 }
-
+.main {
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
 .section-heading {
   display: flex;
   align-items: center;
@@ -123,6 +125,7 @@ body {
   border-radius: 7px;
   overflow: hidden;
   margin-bottom: 30px;
+  flex-basis: 30%;
 }
 
 .card-img {
@@ -186,7 +189,9 @@ body {
 .price {
   margin-right: 10px;
 }
-
+.category {
+  text-overflow: ellipsis;
+}
 .price::after {
   content: "";
   width: 5px;
@@ -196,4 +201,45 @@ body {
   border-radius: 50%;
   vertical-align: middle;
   margin-left: 10px;
+}
+.footer {
+  padding: 60px 0;
+}
+.footer-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-nav {
+  margin-right: auto;
+  margin-left: 35px;
+}
+.footer-link {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #595959;
+  text-decoration: none;
+}
+.footer-link:not(:last-child) {
+  margin-right: 15px;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+}
+.social-link:not(:last-child) {
+  margin-right: 21px;
+}
+
+@media (max-width: 1336px) {
+  .container {
+    max-width: 960px;
+  }
+  .promo {
+    background-size: 750px;
+    background-position: center right -300px;
+  }
 }
