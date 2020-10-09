@@ -95,6 +95,7 @@ body {
   color: #302C34;
 }
 .main {
+  margin: 0;
   background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
 }
 .section-heading {
@@ -125,7 +126,7 @@ body {
   border-radius: 7px;
   overflow: hidden;
   margin-bottom: 30px;
-  flex-basis: 30%;
+  flex-basis: 32%;
 }
 
 .card-img {
@@ -166,6 +167,7 @@ body {
 .card-info {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .rating {
@@ -191,6 +193,9 @@ body {
 }
 .category {
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 150px;
 }
 .price::after {
   content: "";
@@ -241,5 +246,122 @@ body {
   .promo {
     background-size: 750px;
     background-position: center right -300px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .promo {
+    background-size: 500px;
+    background-position: center right -250px;
+    padding: 50px;
+  }
+  .promo-text {
+    font-size: 18px;
+    max-width: 400px;
+  }
+  .card {
+    flex-basis: 49%;
+  }
+  .footer-link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 760px) {
+  .container {
+    max-width: 560px;
+  }
+  .promo {
+    background-position: center right -300px;
+  }
+  .promo-title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .promo-text {
+    font-size: 16px;
+    max-width: 300px;
+    margin-top: 0;
+  }
+  .card-title {
+    font-size: 18px;
+  }
+  .card-info {
+    flex-wrap: wrap;
+  }
+  .rating {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 578px) {
+  .container {
+    width: 90%;
+  }
+  
+  .header {
+    flex-wrap: wrap;
+  }
+  .input-address {
+    margin-top: 15px;
+    order: 5;
+    flex: 100%;
+  }
+  .promo {
+    background-image: none;
+    padding: 20px;
+  }
+  .section-title {
+    font-size: 24px;
+    line-height: 38px;
+    margin-right: 20px;
+  }
+  .section-heading {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .input-search {
+    flex: 100%;
+  }
+  .cards {
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    flex-basis: 85%;
+  }
+  .card-img {
+    min-width: 100%;
+  }
+  .footer-block {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-nav {
+    order: 0;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .footer-link:not(:last-child) {
+    margin-right: 0;
+  }
+  .social-links {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  .footer-logo {
+    order: 2;
+  }
+}
+@media (max-width: 480px) {
+  .button {
+    min-height: 40px;
+  }
+  .button-text {
+    display: none;
   }
 }
