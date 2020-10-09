@@ -1,1 +1,19 @@
-https://evsedov.github.io/glo-academy-delivery-food/
+# Интенсив Glo Academy по верстке | "Delivery Food"
+
+[Delivery Food - доставка еды до вашего дома](https://evsedov.github.io/glo-academy-delivery-food/)
+
+## На интенсиве я изучил:
+
+### День 1
+
+Сверстал шапку сайта
+
+### День 2
+
+Сверстал секцию "promo" и секцию "restaurants", сверстал карточки товара и разместил их на сайте.
+
+### День 3
+
+Сверстал подвал сайта.
+Сделал на сайте адаптивную верстку.
+Доработал секцию "restaurants".
